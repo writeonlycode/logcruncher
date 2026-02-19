@@ -2,5 +2,6 @@
 name = "logcruncher"
 version = "0.1.0"
 edition = "2024"
+description = "A reliable command-line tool that helps teams quickly filter, analyze, and summarize large log files."
 
 [dependencies]
