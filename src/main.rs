@@ -1,3 +1,13 @@
+use std::process::exit;
+
+use clap::Parser;
+use logcruncher::config::Config;
+
 fn main() {
-    println!("Hello, world!");
+    let config = Config::parse();
+
+    if let Err(error) = logcruncher::run(config) {
+        eprintln!("{}", error);
+        exit(-1);
+    }
 }
