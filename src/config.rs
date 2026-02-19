@@ -12,7 +12,7 @@ pub struct Config {
     group_by: Option<String>,
 
     #[arg(long, help = "Count records")]
-    count: Option<String>,
+    count: bool,
 
     #[arg(long, default_value = "json", help = "Output format")]
     format: Option<Format>,
@@ -21,7 +21,7 @@ pub struct Config {
     limit: Option<usize>,
 
     #[arg(long, help = "Fail on malformed input")]
-    strict: Option<bool>,
+    strict: bool,
 }
 
 #[derive(ValueEnum, Clone, Debug)]
