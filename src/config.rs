@@ -28,8 +28,8 @@ pub struct Config {
 
 #[derive(Clone, Debug)]
 pub struct Filter {
-    field: String,
-    value: String,
+    pub field: String,
+    pub value: String,
 }
 
 impl FromStr for Filter {
